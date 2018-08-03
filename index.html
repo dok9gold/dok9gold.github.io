@@ -2,7 +2,7 @@
 <html>
 <body>
 <h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. dok9gold 4</p>
+<p>I'm hosted with GitHub Pages. dok9gold 5</p>
 
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
@@ -35,7 +35,7 @@
     });
 
     messaging.getToken().then(function(currentToken) {
-        document.getElementById("txt").innerText("currentToken");
+        document.getElementById("txt").innerText = currentToken;
         console.log(currentToken);
         if (currentToken) {
         sendTokenToServer(currentToken);
